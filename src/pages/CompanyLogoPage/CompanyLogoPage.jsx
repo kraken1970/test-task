@@ -1,5 +1,6 @@
-import React from 'react';
-import LoadZone from '../../components/LoadZone/LoadZone';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+
 import styles from './CompanyLogoPage.module.scss';
 
 const CompanyLogoPage = () => {
@@ -12,7 +13,7 @@ const CompanyLogoPage = () => {
         </p>
       </header>
       <div className={styles.loadZone}>
-        <LoadZone />
+        <p>DRAGDROP</p>
       </div>
     </div>
   );
