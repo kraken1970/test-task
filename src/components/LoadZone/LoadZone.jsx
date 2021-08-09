@@ -48,7 +48,6 @@ const LoadZone = () => {
           onDrop={(e) => onDropHandler(e)}
         >
           <LoadArea loading={loading} loaded={loaded} />
-          25
         </div>
       ) : (
         <div
@@ -58,7 +57,6 @@ const LoadZone = () => {
           onDragOver={(e) => dragStartHandler(e)}
         >
           <LoadArea loading={loading} loaded={loaded} />
-          36
         </div>
       )}
     </div>
