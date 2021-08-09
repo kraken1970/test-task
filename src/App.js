@@ -8,7 +8,7 @@ function App() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="App">
-        <DragDrop />
+        <CompanyLogoPage />
       </div>
     </DndProvider>
   );

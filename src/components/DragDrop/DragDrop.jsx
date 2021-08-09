@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDrop } from 'react-dnd';
 import Pic from '../Pic/Pic';
 import Logo1 from '../../assets/img/productboard.png';
+import styles from './DragDrop.module.scss';
 const PictureList = [{ id: 1, url: Logo1 }];
 
 const DragDrop = () => {
@@ -21,12 +22,12 @@ const DragDrop = () => {
   };
   return (
     <>
-      <div className="Pictures">
+      <div className={styles.Pictures}>
         {PictureList.map((picture) => {
           return <Pic url={picture.url} id={picture.id} />;
         })}
       </div>
-      <div className="Board" ref={drop}>
+      <div className={styles.Board} ref={drop}>
         {board.map((picture) => {
           return <Pic url={picture.url} id={picture.id} />;
         })}
